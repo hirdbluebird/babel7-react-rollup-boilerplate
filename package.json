@@ -8,17 +8,8 @@
   "license": "MIT",
   "scripts": {
     "bundle": "rollup -c",
-    "build": "babel src -d dist",
-    "build:test": "shx rm -rf && babel src -d dist",
-    "#prepare": "yarn clean",
-    "clean": "shx rm -rf ./coverage && shx rm -rf ./dist",
-    "lint": "standard",
-    "zprepublish": "yarn clean && yarn build",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:cover": "jest --coverage",
-    "storybook": "start-storybook -p 9001 -c .storybook",
-    "code-fix": "standard --fix"
+    "clean": "shx rm -rf ./build && shx rm -rf ./dist",
+    "prepublish": "yarn clean && yarn build",
   },
   "dependencies": {
     "@babel/core": "^7.4.5",
