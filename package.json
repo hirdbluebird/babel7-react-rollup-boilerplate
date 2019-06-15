@@ -9,18 +9,28 @@
   "scripts": {
     "bundle": "rollup -c",
     "clean": "shx rm -rf ./build && shx rm -rf ./dist",
-    "prepublish": "yarn clean && yarn build"
+    "prepublish": "yarn clean && yarn build",
+    "pretest": "eslint src/",
+    "lint": "eslint --ext .js --ext .jsx ."
   },
-  "dependencies": {
+  "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "babel-plugin-external-helpers": "^6.22.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
     "rollup": "^1.14.4",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^10.0.0",
     "rollup-plugin-node-globals": "^1.4.0",
     "rollup-plugin-node-resolve": "^5.0.1",
     "rollup-plugin-replace": "^2.2.0"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.1"
   }
 }
