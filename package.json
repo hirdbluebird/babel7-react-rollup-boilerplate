@@ -10,8 +10,8 @@
     "bundle": "rollup -c",
     "clean": "shx rm -rf ./build && shx rm -rf ./dist",
     "prepublish": "yarn clean && yarn build",
-    "pretest": "eslint src/",
-    "lint": "eslint --ext .js --ext .jsx ."
+    "pretest": "eslint src/**",
+    "lint": "eslint --ext .js --ext .jsx . --fix"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

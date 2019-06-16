@@ -1,14 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-export default class Child extends Component {
-  render () {
-    const items = [1, 2, 3]
-    return (
-      <div>
-        {items.map(item =>
-          <p>{item}</p>
-        )}
-      </div>
-    )
-  }
-}
+const Child = () => {
+  <div>Lorem ipsum dolor sit amet</div>;
+};
+
+export default Child;

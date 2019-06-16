@@ -1,13 +1,25 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import Child from './Components/TestComponent';
 
 export default class App extends Component {
-  render() {
-    const x = 'y'
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      toggle: true,
+    };
+  }
+
+  toggleApp = () => {
+    this.setState((prevState) => {
+      !prevState.toggle;
+    });
+  }
+
+  render() {
     return (
       <div>
-        <Child />
+        <Child onClick={this.setState} />
         <p>Test phraze</p>
       </div>
     );
