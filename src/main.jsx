@@ -2,19 +2,7 @@ import React, { Component } from 'react';
 import Child from './Components/TestComponent';
 
 export default class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      toggle: true,
-    };
-  }
-
-  toggleApp = () => {
-    this.setState((prevState) => {
-      !prevState.toggle;
-    });
-  }
+  testFunction = () => this.props
 
   render() {
     return (
