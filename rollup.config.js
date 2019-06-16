@@ -17,7 +17,7 @@ const external = [
 export default {
   input: 'src/main.js',
   output: {
-    file: 'build/app.js',
+    file: 'build/build.js',
     format: 'iife',
     name: 'bundle'
   },
