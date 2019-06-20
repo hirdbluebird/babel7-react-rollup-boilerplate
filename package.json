@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "bundle": "rollup -c",
+    "build": "babel src -d dist",
     "clean": "shx rm -rf ./build && shx rm -rf ./dist",
     "prepublish": "yarn clean && yarn build",
     "pretest": "eslint src/**",
