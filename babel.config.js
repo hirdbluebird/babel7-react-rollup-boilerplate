@@ -5,7 +5,8 @@
 const presets = [
   ['@babel/preset-env', {
     'modules': false
-  }]
+  }],
+  ['@babel/preset-react',]
   // {
   //
   // }
@@ -17,7 +18,7 @@ const plugins = [
     {
       root: ['./src/'],
       alias: {
-        '~': './src/',
+        '~': './src/components',
       }
     }
   ],
