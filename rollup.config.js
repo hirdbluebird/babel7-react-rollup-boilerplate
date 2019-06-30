@@ -5,10 +5,6 @@ import replace from 'rollup-plugin-replace';
 import resolve from 'rollup-plugin-node-resolve';
 
 const external = [
-  // 'antd',
-  // 'lodash',
-  // 'uuid',
-  // 'react-image',
   '@react-pdf/renderer',
   'react',
   'react-dom',
